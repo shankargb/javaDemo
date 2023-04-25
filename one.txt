@@ -1,0 +1,42 @@
+package com.java;
+
+public class l1 {	
+	private String snake ;
+	private String number;                        
+	
+	public l1() {
+		snake = "kobra";
+		number = "none";
+	}
+/*try without creating constructor
+public l1() {
+		snake = "kobra";
+		number = "none";
+	}
+	*/
+	
+	
+	// constructor which is paramaterilized 
+	   public l1(String snak, String num) {
+		this.snake= snak;
+		this.number = num;
+	}
+	   public String getSnake() {
+		   return snake;
+	   }
+	   public String getNumber() {
+		   return number;
+	   }
+}
+
+public class merapractice {
+	
+	public static void main (String [] args) {
+		
+		l1 boy = new l1();
+		String c= boy.getSnake();
+		
+		System.out.println(c);
+		
+}
+}
